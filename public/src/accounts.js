@@ -1,8 +1,10 @@
 function findAccountById(accounts, id) {
+//   filters through account and gets index of 0 as it requires an object.
   return accounts.filter((account) => account.id === id)[0];
 }
 
 function sortAccountsByLastName(accounts) {
+//   create copy of accounts array.
   let accountsCopy = [...accounts];
   accountsCopy.sort((accountA, accountB) => {
     let accountALastLower = accountA.name.last.toLowerCase();
